@@ -31,5 +31,9 @@ module Capybara::Poltergeist
     def expires
       Time.at @attributes['expiry'] if @attributes['expiry']
     end
+
+    def inspect
+      value
+    end
   end
 end
